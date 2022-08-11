@@ -40,7 +40,6 @@ class TasksViewController: UIViewController {
     var myPoints = 0
     var addPoints = 0
     var minusPoints = 0
-    var userName = ""
     var timer = Timer()
     var time = 14 {
         didSet {

@@ -33,7 +33,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        goToTasksButton.isEnabled = true
+        goToTasksButton.isEnabled = false
     }
 
     private func didSetAllConfig() {
@@ -69,8 +69,6 @@ class ViewController: UIViewController {
 
             taskViewController.difficulty = difficulty
             taskViewController.configuration = configuration
-            guard let userName = nameTextField.text else { return }
-            taskViewController.userName = userName
         }
     }
 
