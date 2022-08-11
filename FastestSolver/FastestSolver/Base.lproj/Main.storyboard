@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w0X-Fj-aMA">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="fmW-O6-ffy">
+            <objects>
+                <viewController id="w0X-Fj-aMA" customClass="ViewController" customModule="MathProblems" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MNu-vF-WBk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="AW7-Y7-5QW">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PWM-sN-bBk" userLabel="Welcome">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="83"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PND-0v-XAY">
+                                                <rect key="frame" x="132" y="0.0" width="150.5" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CX0-c4-3ol">
+                                                <rect key="frame" x="140" y="42" width="134" height="41"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="41" id="Lx8-ZR-haT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="didEditNameTextField:" destination="w0X-Fj-aMA" eventType="editingChanged" id="DET-yJ-y49"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hqQ-W8-01n" userLabel="Difficulty">
+                                        <rect key="frame" x="0.0" y="211.5" width="414" height="155.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Difficulty" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXI-kt-eoF">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="32.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Srp-fo-3c9">
+                                                <rect key="frame" x="0.0" y="42.5" width="414" height="113"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ey-sw-eGx">
+                                                        <rect key="frame" x="175" y="0.0" width="64.5" height="35"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Easy">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="18" name="Helvetica"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <color key="baseForegroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="didTapDifficultyButton:" destination="w0X-Fj-aMA" eventType="touchUpInside" id="laY-6T-Phj"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1R-OS-qUv">
+                                                        <rect key="frame" x="163" y="39" width="88.5" height="35"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Medium">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="18" name="Helvetica"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="didTapDifficultyButton:" destination="w0X-Fj-aMA" eventType="touchUpInside" id="if1-xj-f29"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8Y-V7-A5A">
+                                                        <rect key="frame" x="176.5" y="78" width="61" height="35"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="Hard">
+                                                                    <attributes>
+                                                                        <font key="NSFont" size="17" name="Helvetica"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="didTapDifficultyButton:" destination="w0X-Fj-aMA" eventType="touchUpInside" id="7go-Qg-d3l"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dec-xJ-fa2" userLabel="Configurations">
+                                        <rect key="frame" x="0.0" y="496" width="414" height="143.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Configurations" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKR-ja-WFD">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="32.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="egl-kt-iHW">
+                                                <rect key="frame" x="0.0" y="42.5" width="414" height="101"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GU2-KT-9sW">
+                                                        <rect key="frame" x="141" y="0.0" width="132.5" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Plus / + - / Minus"/>
+                                                        <connections>
+                                                            <action selector="didTapConfiguration:" destination="w0X-Fj-aMA" eventType="touchUpInside" id="C9C-dd-pla"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ce3-z6-D1e">
+                                                        <rect key="frame" x="128" y="35" width="158" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Multiply / x ÷ / Divine"/>
+                                                        <connections>
+                                                            <action selector="didTapConfiguration:" destination="w0X-Fj-aMA" eventType="touchUpInside" id="Cmi-Jh-XAW"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zH5-dE-r1Q">
+                                                        <rect key="frame" x="161" y="70" width="92" height="31"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="All options"/>
+                                                        <connections>
+                                                            <action selector="didTapConfiguration:" destination="w0X-Fj-aMA" eventType="touchUpInside" id="I0n-ME-oCs"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KS8-c4-vWe">
+                                        <rect key="frame" x="0.0" y="768" width="414" height="50"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="rNH-pR-Mtq"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Start">
+                                                    <attributes>
+                                                        <font key="NSFont" size="23" name="Helvetica"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wmA-MZ-nGW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AW7-Y7-5QW" firstAttribute="top" secondItem="wmA-MZ-nGW" secondAttribute="top" id="0uB-hK-5Gc"/>
+                            <constraint firstItem="wmA-MZ-nGW" firstAttribute="bottom" secondItem="AW7-Y7-5QW" secondAttribute="bottom" id="OhB-MA-0w2"/>
+                            <constraint firstItem="wmA-MZ-nGW" firstAttribute="trailing" secondItem="AW7-Y7-5QW" secondAttribute="trailing" id="UPX-Yt-bTW"/>
+                            <constraint firstItem="AW7-Y7-5QW" firstAttribute="leading" secondItem="wmA-MZ-nGW" secondAttribute="leading" id="izl-3u-r3u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Ij-27-YAw"/>
+                    <connections>
+                        <outlet property="allOptionsButton" destination="zH5-dE-r1Q" id="W2I-QL-fNu"/>
+                        <outlet property="configurationsLabel" destination="MKR-ja-WFD" id="x9W-iu-h3U"/>
+                        <outlet property="difficultyLabel" destination="cXI-kt-eoF" id="ZK4-YT-xrD"/>
+                        <outlet property="easyButton" destination="5Ey-sw-eGx" id="y55-ah-pzP"/>
+                        <outlet property="goToTasksButton" destination="KS8-c4-vWe" id="XeX-xj-6IV"/>
+                        <outlet property="hardButton" destination="c8Y-V7-A5A" id="JPD-l4-F1X"/>
+                        <outlet property="mediumButton" destination="m1R-OS-qUv" id="QQG-tQ-G1J"/>
+                        <outlet property="multiplyDevineButton" destination="Ce3-z6-D1e" id="cMj-1p-1MT"/>
+                        <outlet property="nameTextField" destination="CX0-c4-3ol" id="mf7-f4-AeY"/>
+                        <outlet property="plusMinusButton" destination="GU2-KT-9sW" id="Fy4-Vb-jhG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aA6-vc-AhK" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="530" y="86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
