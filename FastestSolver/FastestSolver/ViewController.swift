@@ -60,17 +60,19 @@ class ViewController: UIViewController {
         didSetAllConfig()
     }
 
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "Task" {
-//            guard let taskViewController = segue.destination as? TasksViewController
-//            else { fatalError() }
-//
-//            taskViewController.difficulty = difficulty
-//            taskViewController.configuration = configuration
-//            guard let userName = nameTextField.text else { return }
-//            taskViewController.userName = userName
-//        }
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Task" {
+            guard let taskViewController = segue.destination as? TasksViewController
+            else {
+                fatalError()
+            }
+
+            taskViewController.difficulty = difficulty
+            taskViewController.configuration = configuration
+            guard let userName = nameTextField.text else { return }
+            taskViewController.userName = userName
+        }
+    }
 
 }
 

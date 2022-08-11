@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA66ED1328A554770063EC8C /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA66ED1228A554770063EC8C /* TasksViewController.swift */; };
 		FAD0D2CE28A543240053B76A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD0D2CD28A543240053B76A /* AppDelegate.swift */; };
 		FAD0D2D028A543240053B76A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD0D2CF28A543240053B76A /* SceneDelegate.swift */; };
 		FAD0D2D228A543240053B76A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD0D2D128A543240053B76A /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA66ED1228A554770063EC8C /* TasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		FAD0D2CA28A543240053B76A /* FastestSolver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastestSolver.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD0D2CD28A543240053B76A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAD0D2CF28A543240053B76A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				FAD0D2CD28A543240053B76A /* AppDelegate.swift */,
 				FAD0D2CF28A543240053B76A /* SceneDelegate.swift */,
 				FAD0D2D128A543240053B76A /* ViewController.swift */,
+				FA66ED1228A554770063EC8C /* TasksViewController.swift */,
 				FAD0D2E128A54D270053B76A /* Game.swift */,
 				FAD0D2D328A543240053B76A /* Main.storyboard */,
 				FAD0D2D628A543440053B76A /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			files = (
 				FAD0D2D228A543240053B76A /* ViewController.swift in Sources */,
 				FAD0D2CE28A543240053B76A /* AppDelegate.swift in Sources */,
+				FA66ED1328A554770063EC8C /* TasksViewController.swift in Sources */,
 				FAD0D2D028A543240053B76A /* SceneDelegate.swift in Sources */,
 				FAD0D2E228A54D270053B76A /* Game.swift in Sources */,
 			);
